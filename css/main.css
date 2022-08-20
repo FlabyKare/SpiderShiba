@@ -1,8 +1,8 @@
-body {
-  overflow-x: hidden !important;
-  position: relative;
+@media (max-height: 689.98px) {
+  .mobile_menu_wrapper {
+    min-height: 800px !important;
+  }
 }
-
 @media (max-width: 1644.98px) {
   .desktop_menu {
     display: none !important;
@@ -68,7 +68,6 @@ body {
     display: none !important;
   }
   .mobile_menu_wrapper {
-    min-height: 800px !important;
     padding-top: 17px !important;
     -webkit-transition: 0.5s;
     transition: 0.5s;
