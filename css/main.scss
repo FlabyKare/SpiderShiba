@@ -1,0 +1,385 @@
+@import "_media";
+
+// Обнуление стилей
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   font-size: 100%;
+   font: inherit;
+   vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+   display: block;
+}
+ol,
+ul {
+   list-style: none;
+}
+blockquote,
+q {
+   quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+   content: "";
+   content: none;
+}
+table {
+   border-collapse: collapse;
+   border-spacing: 0;
+}
+
+* {
+   box-sizing: border-box;
+}
+@font-face {
+   font-family: "SF Pro Display Regular";
+   src: url(../fonts/SFProDisplay-Regular.ttf);
+}
+
+@font-face {
+   font-family: "SF Pro Display Medium";
+   src: url(../fonts/SFProDisplay-Medium.ttf);
+}
+
+@font-face {
+   font-family: "SF Pro Display Semibold";
+   src: url(../fonts/SFProDisplay-Semibold.ttf);
+}
+
+@font-face {
+   font-family: "SF Pro Display Bold";
+   src: url(../fonts/SFProDisplay-Bold.ttf);
+}
+
+@font-face {
+   font-family: "SF Pro Display Black";
+   src: url(../fonts/SFProDisplay-Black.ttf);
+}
+
+@font-face {
+   font-family: "SF Pro Display Heavy";
+   src: url(../fonts/SFProDisplay-Heavy.ttf);
+}
+$font_400: "SF Pro Display Regular";
+$font_500: "SF Pro Display Medium";
+$font_600: "SF Pro Display Semibold";
+$font_700: "SF Pro Display Bold";
+$font_800: "SF Pro Display Black";
+$font_900: "SF Pro Display Heavy";
+body {
+   margin: 0;
+   padding: 0;
+   font-family: "SF Pro Display", sans-serif;
+}
+
+// ==================================
+// Шапка сайта
+// ==================================
+
+header {
+   padding: 25px 0 0 0;
+   min-height: 100vh;
+   background: url(../img/Header/intro_bg.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   overflow-x: hidden;
+   max-width: 100%;
+   position: relative;
+}
+.header_wrapper {
+   width: 100%;
+   max-width: 1736px;
+   margin: 0 auto 93px;
+}
+nav {
+   display: flex;
+   justify-content: space-between;
+}
+.logo_title {
+   font-weight: 800;
+   font-size: 25px;
+   line-height: 34px;
+   display: flex;
+   align-items: center;
+   color: #ffffff;
+   cursor: pointer;
+
+   span {
+      color: #e11d2e;
+      cursor: pointer;
+   }
+}
+.desktop_menu {
+   display: flex;
+   gap: 70px;
+}
+.links {
+   display: flex;
+   align-items: center;
+   gap: 25px;
+   a {
+      font-family: $font_600;
+      font-size: 17px;
+      line-height: 20px;
+      color: #ffffff;
+      opacity: 0.8;
+      text-decoration: none;
+      cursor: pointer;
+      transition: 0.5s;
+      flex-direction: column;
+      display: inline-flex;
+      &:hover {
+         color: #ffffff;
+         //  &::after {
+         //     content: "";
+         //     width: 100%;
+         //     opacity: 1;
+         //  }
+      }
+      &:visited {
+         color: #ffffff;
+      }
+      //   &::after {
+      //      content: "";
+      //      width: 2%;
+      //      height: 2px;
+      //      border-radius: 10px;
+      //      background: #cfd1d8;
+      //      opacity: 0;
+      //      transition: 0.4s;
+      //      margin-top: 5px;
+      //   }
+   }
+}
+.button {
+   background: #e11d2e;
+   border-radius: 10px;
+   padding: 11px 30px;
+   font-weight: 600;
+   font-size: 15px;
+   line-height: 18px;
+   text-align: center;
+   color: #ffffff;
+   opacity: 0.8;
+   transition: 0.5s;
+   cursor: pointer;
+   border: none;
+
+   &:hover {
+      background: #ac1216;
+   }
+}
+.logo_wrapper {
+   display: flex;
+   gap: 15px;
+   cursor: pointer;
+}
+.mobile_btns{
+    display: none;
+}
+.header_info_wrapper {
+   display: flex;
+   justify-content: space-between;
+   width: 100%;
+   max-width: 1736px;
+   margin: 0 auto 93px;
+   padding: 0 15px;
+   flex-wrap: wrap;
+}
+.header_info_col {
+}
+.header_info_col1 {
+   width: 100%;
+   max-width: 726px;
+}
+h1 {
+   font-family: $font_800;
+   font-size: 80px;
+   line-height: 90px;
+   color: #fff;
+   span {
+      color: #e11d2e;
+   }
+}
+.header_info_col_subtitle {
+   font-family: $font_500;
+   font-size: 25px;
+   line-height: 30px;
+   color: #71768e;
+}
+.header_info_col_text {
+   margin: 40px auto 46px;
+   font-family: $font_400;
+   font-size: 32px;
+   line-height: 38px;
+   display: flex;
+   align-items: center;
+   color: #a0a3b5;
+}
+.header_info_col_buttons {
+   display: flex;
+   gap: 25px;
+   width: 100%;
+   max-width: 699px;
+}
+.reb_btn {
+   cursor: pointer;
+   background: #e11d2e;
+   border-radius: 10px;
+   font-family: $font_700;
+   border: none;
+   padding: 25px 54px;
+   font-size: 25px;
+   line-height: 30px;
+   display: flex;
+   align-items: center;
+   text-align: center;
+   color: #ffffff;
+   transition: 0.5s;
+   width: 100%;
+   max-width: 295px;
+   &:hover {
+      background: #b81f36;
+   }
+}
+.black_btn {
+   cursor: pointer;
+   font-family: $font_500;
+   font-size: 22px;
+   line-height: 26px;
+   align-items: center;
+   text-align: center;
+   color: #ffffff;
+   opacity: 0.9;
+   padding: 27px 30px;
+   background: rgba(255, 255, 255, 0.05);
+   border-radius: 10px;
+   transition: 0.5s;
+   border: none;
+   width: 100%;
+   max-width: 379px;
+   &:hover {
+      background: #1a203b;
+   }
+}
+.header_info_col_code {
+   margin-top: 20px;
+   border: 1px solid rgba(255, 255, 255, 0.09);
+    border-radius: 10px;
+    padding: 14px 0 14px 30px;
+    width: 100%;
+    max-width: 699px;
+}
+.header_info_col_code_title {
+   font-size: 15px;
+   line-height: 18px;
+   font-family: $font_500;
+   color: rgba(255, 255, 255, 0.2);
+}
+.header_info_col_code_hash {
+   font-size: 25px;
+   line-height: 30px;
+   font-family: $font_400;
+   color: rgba(255, 255, 255, 0.4);
+}
+.header_info_col2 {
+}
+
+// ==================================
+// ==================================
