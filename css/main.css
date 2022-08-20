@@ -518,6 +518,42 @@ nav {
   display: flex;
   gap: 70px;
 }
+.desktop_menu .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 25px;
+}
+.desktop_menu .links a {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  position: relative;
+}
+.desktop_menu .links a:hover {
+  color: #ffffff;
+}
+.desktop_menu .links a:hover::after {
+  content: "";
+  width: 100%;
+  opacity: 1;
+}
+.desktop_menu .links a::after {
+  content: "";
+  width: 2%;
+  height: 3px;
+  position: absolute;
+  border-radius: 10px;
+  background: #cfd1d8;
+  opacity: 0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  left: 0;
+  bottom: -10px;
+}
 
 .links {
   display: -webkit-box;

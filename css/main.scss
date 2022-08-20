@@ -208,6 +208,35 @@ nav {
 .desktop_menu {
    display: flex;
    gap: 70px;
+   .links {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    a {
+       display: inline-flex;
+       position: relative;
+       &:hover {
+          color: #ffffff;
+           &::after {
+              content: "";
+              width: 100%;
+              opacity: 1;
+           }
+       }
+         &::after {
+            content: "";
+            width: 2%;
+            height: 3px;
+            position: absolute;
+            border-radius: 10px;
+            background: #cfd1d8;
+            opacity: 0;
+            transition: 0.4s;
+            left: 0;
+            bottom: -10px;
+         }
+    }
+ }
 }
 .links {
    display: flex;
