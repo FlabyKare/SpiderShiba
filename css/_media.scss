@@ -1,9 +1,15 @@
 // Наигация - настройка меню
-@media (max-height: 689.98px) {
-   .mobile_menu_wrapper {
-      min-height: 690px !important ;
-   }
+body{
+    overflow-x: hidden !important;
+    position: relative;
 }
+
+
+// @media (max-height: 689.98px) {
+//    .mobile_menu_wrapper {
+//       min-height: 690px !important ;
+//    }
+// }
 @media (max-width: 1644.98px) {
    .desktop_menu {
       display: none !important;
@@ -36,7 +42,7 @@
       position: relative;
    }
    .body_hide {
-      overflow: hidden !important;
+        display: none !important;
    }
    .right_0 {
       right: 0 !important;
@@ -59,6 +65,7 @@
       }
    }
    .mobile_menu_wrapper {
+        min-height: 800px !important;
       padding-top: 17px !important;
       transition: 0.5s;
       position: absolute;
@@ -102,12 +109,12 @@
 }
 
 // Header
-@media(max-width: 449.98px){
-    .links {
-        margin: 0 0 70px !important;
+// @media(max-width: 449.98px){
+//     .links {
+//         margin: 0 0 70px !important;
 
-     }
-}
+//      }
+// }
 @media (min-width: 320px) and (max-width: 575.98px) {
    nav {
       padding: 0 15px !important;
