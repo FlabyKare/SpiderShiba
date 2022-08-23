@@ -486,6 +486,28 @@
     left: 20% !important;
   }
 }
+@media (min-width: 320px) and (max-width: 575.98px) {
+  .services_cards {
+    padding: 0 15px;
+    gap: 30px !important;
+  }
+  .services_cards .card_item_title {
+    font-size: 30px !important;
+    line-height: 36px !important;
+  }
+  .services_cards .card_item_subtitle {
+    font-size: 15px !important;
+    line-height: 18px !important;
+  }
+  .services_cards .card_item_text {
+    font-size: 19px !important;
+    line-height: 23px !important;
+  }
+  .services_cards_item:hover {
+    -webkit-transform: scale(1.03) !important;
+            transform: scale(1.03) !important;
+  }
+}
 html,
 body,
 div,
@@ -1163,4 +1185,93 @@ h1 span {
   line-height: 60px;
   text-align: center;
   color: #ffffff;
+}
+
+.services {
+  background: #101932;
+  padding-bottom: 209px;
+}
+.services .section_title {
+  margin-bottom: 50px;
+}
+
+.services_cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  max-width: 1624px;
+  margin: 0 auto;
+  gap: 68px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.services_cards_item {
+  width: 496px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 30px 35px 40px 40px;
+  background: #384d70;
+  border-radius: 20px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.services_cards_item:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.card_item_title {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-family: "SF Pro Display Semibold";
+  font-size: 35px;
+  line-height: 42px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #ffffff;
+}
+
+.card_item_subtitle {
+  font-family: "SF Pro Display Regular";
+  font-size: 20px;
+  line-height: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #ffffff;
+  opacity: 0.3;
+}
+
+.card_item_text {
+  font-family: "SF Pro Display Medium";
+  font-size: 25px;
+  line-height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.card_item_text1 {
+  margin: 30px auto;
+}
+
+.card_item_text3 {
+  margin: 30px auto 0;
 }

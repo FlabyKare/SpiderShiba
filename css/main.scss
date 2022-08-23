@@ -580,7 +580,7 @@ h1 {
       width: 100%;
       max-width: 215px;
       height: 77px;
-      
+
       margin: 0 auto;
       .reb_btn {
          font-family: $font_600 !important;
@@ -601,5 +601,75 @@ h1 {
    text-align: center;
    color: #ffffff;
 }
+// ==================================
+// ==================================
+
+// ==================================
+// 3 Section
+// ==================================
+
+.services {
+   background: #101932;
+   padding-bottom: 209px;
+   .section_title {
+      margin-bottom: 50px;
+   }
+}
+.services_cards {
+   display: flex;
+   width: 100%;
+   max-width: 1624px;
+   margin: 0 auto;
+   gap: 68px;
+   flex-wrap: wrap;
+   justify-content: center;
+}
+.services_cards_item {
+   width: 496px;
+   height: fit-content;
+   padding: 30px 35px 40px 40px;
+   background: #384d70;
+   border-radius: 20px;
+   transition: 0.5s;
+   &:hover{
+    transform: scale(1.1);
+   }
+}
+.card_item_img {
+}
+.card_item_title {
+    margin-top: 30px;
+    margin-bottom: 10px;
+
+   font-family: $font_600;
+   font-size: 35px;
+   line-height: 42px;
+   display: flex;
+   align-items: center;
+   color: #ffffff;
+}
+.card_item_subtitle {
+   font-family: $font_400;
+   font-size: 20px;
+   line-height: 24px;
+   display: flex;
+   align-items: center;
+   color: #ffffff;
+   opacity: 0.3;
+}
+.card_item_text {
+   font-family: $font_500;
+   font-size: 25px;
+   line-height: 30px;
+   display: flex;
+   align-items: center;
+   color: rgba(255, 255, 255, 0.7);
+}
+.card_item_text1 {
+   margin: 30px auto;
+}
+.card_item_text3 {
+    margin: 30px auto 0;
+ }
 // ==================================
 // ==================================
