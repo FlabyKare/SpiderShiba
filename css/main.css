@@ -4,7 +4,7 @@
     min-height: 800px !important;
   }
 }
-@media (max-width: 1644.98px) {
+@media (max-width: 1089.98px) {
   .desktop_menu {
     display: none !important;
   }
@@ -127,7 +127,7 @@
     margin: 0 auto;
   }
 }
-@media (min-width: 1645px) {
+@media (min-width: 1090px) {
   .mobile_menu,
 .mobile_menu_wrapper {
     display: none !important;
@@ -143,6 +143,9 @@
         -ms-flex-pack: justify !important;
             justify-content: space-between !important;
     gap: 0 !important;
+  }
+  nav .logo_wrapper {
+    margin-right: 0 !important;
   }
   .logo_title {
     font-size: 15px !important;
@@ -223,10 +226,18 @@
     padding: 0 5px;
   }
 }
+@media (min-width: 1400px) and (max-width: 1735.98px) {
+  nav .logo_wrapper {
+    margin-right: 0 !important;
+  }
+}
 @media (min-width: 576px) and (max-width: 767.98px) {
   .header_wrapper {
     max-width: 726px !important;
     margin: 0 auto 93px;
+  }
+  .header_wrapper .logo_wrapper {
+    margin-right: 0 !important;
   }
   .header_wrapper nav {
     -webkit-box-pack: justify !important;
@@ -258,25 +269,37 @@
   }
 }
 @media (min-width: 992px) and (max-width: 1199.98px) {
-  .header_wrapper {
-    max-width: 726px !important;
-    margin: 0 auto 93px;
+  nav {
+    gap: 30px !important;
   }
-  .header_wrapper nav {
-    -webkit-box-pack: justify !important;
-        -ms-flex-pack: justify !important;
-            justify-content: space-between !important;
+  nav .logo_wrapper {
+    margin-right: 0 !important;
+  }
+  .desktop_menu {
+    gap: 34px !important;
+    padding: 0 15px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 @media (min-width: 1200px) and (max-width: 1399.98px) {
-  .header_wrapper {
-    max-width: 726px !important;
-    margin: 0 auto 93px;
+  nav {
+    gap: 30px !important;
   }
-  .header_wrapper nav {
-    -webkit-box-pack: justify !important;
-        -ms-flex-pack: justify !important;
-            justify-content: space-between !important;
+  nav .logo_wrapper {
+    margin-right: 0 !important;
+  }
+  .desktop_menu {
+    gap: 34px !important;
+    padding: 0 15px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 @media (max-width: 1347.98px) {
@@ -982,9 +1005,11 @@ nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .logo_title {
@@ -1108,6 +1133,7 @@ nav {
   display: flex;
   gap: 15px;
   cursor: pointer;
+  margin-right: 177px;
 }
 
 .mobile_btns {
