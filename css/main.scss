@@ -759,5 +759,79 @@ h1 {
    color: #ffffff;
    opacity: 0.8;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+.preloader {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    /* фоновый цвет */
+    background: linear-gradient(260.81deg, #162758 2.47%, #0A142A 97.49%);
+    z-index: 1001;
+    width: 100%;
+    height: 100%;
+    .logo_wrapper{
+        position: absolute;
+        bottom: 30%;
+    }
+  }
+
+
+
+  @keyframes preloader-rotate {
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes preloader-rotate_2 {
+    100% {
+      transform: rotate(-360deg);
+    }
+  }
+
+  .loaded_hiding .preloader {
+    transition: 0.3s opacity;
+    opacity: 0;
+  }
+.div_sircle{
+    position: absolute;
+}
+
+.load_cat {
+    top: 38%;
+}
+
+.load_1 {
+    top: 34.4%;
+    animation: preloader-rotate 10s linear infinite alternate;
+}
+.load_2 {
+    top: 32%;
+    animation: preloader-rotate_2 10s linear infinite alternate;
+}
+.load_3 {
+    top: 30%;
+    animation: preloader-rotate 10s linear infinite alternate;
+}
+  .loaded .preloader {
+    display: none ;
+    
+  }
 // ==================================
 // ==================================
