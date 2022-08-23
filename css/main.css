@@ -695,6 +695,16 @@
   .play_wrapper_col2_item2_info_text {
     text-align: center;
   }
+  .services_cards {
+    padding: 0 15px !important;
+  }
+  .services_cards .services_cards_item {
+    width: 100% !important;
+  }
+  .services_cards .services_cards_item:hover {
+    -webkit-transform: scale(1) !important;
+            transform: scale(1) !important;
+  }
 }
 @media (min-width: 576px) and (max-width: 767.98px) {
   .play_wrapper_col1 {
