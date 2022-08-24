@@ -1265,7 +1265,7 @@ h1 span {
   max-width: 295px;
 }
 .reb_btn:hover {
-  background: #b81f36;
+  background: #8a1829;
 }
 
 .black_btn {
@@ -1386,8 +1386,8 @@ h1 span {
 }
 
 .marquee {
-  -webkit-animation: scroll 30s linear infinite;
-          animation: scroll 30s linear infinite;
+  -webkit-animation: scroll 40s linear infinite;
+          animation: scroll 40s linear infinite;
 }
 
 @-webkit-keyframes scroll {
@@ -1533,6 +1533,10 @@ h1 span {
 
 .img_absolute {
   position: absolute;
+}
+.img_absolute:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .section_title {
