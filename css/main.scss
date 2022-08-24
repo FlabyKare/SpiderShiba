@@ -166,6 +166,19 @@ body {
    margin: 0;
    padding: 0;
    font-family: "SF Pro Display", sans-serif;
+   scroll-behavior: smooth;
+   &::-webkit-scrollbar {
+      z-index: 999999999999999999999999999999999999 !important;
+      background: #162657;
+   }
+   &::-webkit-scrollbar-track {
+      z-index: 999999999999999999999999999999999999 !important;
+   }
+   &::-webkit-scrollbar-thumb {
+      z-index: 999999999999999999999999999999999999 !important;
+      background: #2848a8;
+      border-radius: 20px;
+   }
 }
 
 // ==================================
@@ -595,8 +608,8 @@ h1 {
 }
 .img_absolute {
    position: absolute;
-   &:hover{
-    transform: scale(1.2);
+   &:hover {
+      transform: scale(1.2);
    }
 }
 .section_title {
@@ -911,7 +924,7 @@ h1 {
    animation: preloader-rotate 10s linear infinite alternate;
 }
 .loaded .preloader {
-      display: none;
+   display: none;
 }
 
 // ==================================
