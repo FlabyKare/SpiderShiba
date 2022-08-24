@@ -1921,3 +1921,7 @@ h1 span {
   -webkit-animation: preloader-rotate 10s linear infinite alternate;
           animation: preloader-rotate 10s linear infinite alternate;
 }
+
+.loaded .preloader {
+  display: none;
+}
