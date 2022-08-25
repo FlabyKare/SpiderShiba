@@ -12,11 +12,6 @@ const appenedClasses = () => {
        item.classList.toggle("body_hide");
     });
  };
-//  const removeClasses = () => {
-//     body_hidden.forEach((item) => {
-//        item.classList.toggle("body_hide");
-//     });
-//  };
 
 function toggleMenu() {
     menuWrapper();
@@ -26,6 +21,22 @@ function toggleMenu() {
 menu_btn.addEventListener("click", toggleMenu);
 menu_close.addEventListener("click", toggleMenu);
 menuLinks.forEach( link => link.addEventListener("click", toggleMenu))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 window.onload = function () {
    document.body.classList.add("loaded_hiding");
