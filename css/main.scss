@@ -1078,10 +1078,10 @@ h1 {
 .team_wrapper {
    width: 100%;
    max-width: 1616px;
-   margin: 60px auto 80px;
+   margin: 60px auto 160px;
 }
-.team_item{
-    text-align: center;
+.team_item {
+   text-align: center;
 }
 .team_item_title {
    font-family: $font_700;
@@ -1100,57 +1100,121 @@ h1 {
    display: inline-block;
 }
 
-.slick-slide  {
-    img{
-        display: inline-block;
-    }
+.slick-slide {
+   img {
+      display: inline-block;
+   }
 }
 .slick-dots li button {
-    border: 0;
-    /* background: transparent; */
-    display: block;
-    height: 10px;
-    width: 10px;
-    outline: none;
-    line-height: 0px;
-    font-size: 0px;
-    color: transparent;
-    padding: 5px;
-    cursor: pointer;
+   border: 0;
+   /* background: transparent; */
+   display: block;
+   height: 10px;
+   width: 10px;
+   outline: none;
+   line-height: 0px;
+   font-size: 0px;
+   color: transparent;
+   padding: 5px;
+   cursor: pointer;
 }
 
 .slick-dots li.slick-active button:before {
-    color: #FF0000;
-    opacity: 0.75;
+   color: #ff0000;
+   opacity: 0.75;
 }
 
 .slick-dots li button:before {
-    /* position: absolute; */
-    /* top: 0; */
-    /* left: 0; */
-    content: "•";
-    width: 10px;
-    height: 10px;
-    font-family: "slick";
-    font-size: 6px;
-    line-height: 20px;
-    text-align: center;
-    background: #A2A7B4;
-    opacity: 1;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
-    content: "";
+   /* position: absolute; */
+   /* top: 0; */
+   /* left: 0; */
+   content: "•";
+   width: 10px;
+   height: 10px;
+   font-family: "slick";
+   font-size: 6px;
+   line-height: 20px;
+   text-align: center;
+   background: #a2a7b4;
+   opacity: 1;
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+   -webkit-transition: 0.5s;
+   transition: 0.5s;
+   content: "";
 }
-
 
 .slick-dots li.slick-active button:before {
-    color: #FF0000;
-    background: #FF0000;
-    opacity: 0.75;
-    content: "";
+   color: #ff0000;
+   background: #ff0000;
+   opacity: 0.75;
+   content: "";
 }
-.slick-dots{
-    bottom: -72px;
+.slick-dots {
+   bottom: -72px;
+}
+
+.partners {
+   .partners_icons {
+      margin-top: 40px;
+      margin-bottom: 0 !important;
+      .partners_icons_item {
+         opacity: 0.7;
+         &:hover {
+            opacity: 1;
+         }
+      }
+   }
+}
+
+.tokenomiks {
+   background: #101d3f;
+   padding: 70px 0 130px;
+}
+.tokenomiks_wrapper {
+   width: 100%;
+   max-width: 1735px;
+   margin: 66px auto 0;
+   display: flex;
+   align-items: center;
+}
+.tokenomiks_col {
+   display: flex;
+   flex-direction: column;
+   gap: 25px;
+}
+.tokenomiks_col2 {
+   margin: 0 147px 0 148px;
+   width: 552px;
+}
+.tokenomiks_col_item {
+   background: rgba(0, 0, 0, 0.3);
+   border-radius: 15px;
+   padding: 25px 50px 20px 30px;
+   transition: 0.5s;
+   cursor: pointer;
+   * {
+      cursor: pointer;
+   }
+   &:hover {
+      transform: scale(1.1);
+      background: rgba(26, 49, 107, 0.7);
+   }
+}
+.tokenomiks_col_item_line {
+}
+.tokenomiks_col_item_title {
+   font-family: $font_600;
+   font-size: 27px;
+   line-height: 32px;
+   color: #ffffff;
+   margin-top: 10px;
+   margin-bottom: 5px;
+}
+.tokenomiks_col_item_text {
+   font-family: $font_400;
+   font-size: 20px;
+   line-height: 24px;
+   color: #ffffff;
+   opacity: 0.3;
 }

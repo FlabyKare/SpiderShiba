@@ -1082,21 +1082,76 @@ body {
    //  }
 }
 
-// Intro
+// Tokenomiks
 
 @media (min-width: 320px) and (max-width: 575.98px) {
+   .tokenomiks {
+      padding-right: 15px !important;
+      padding-left: 15px !important;
+   }
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
+   .tokenomiks {
+      padding-right: 15px !important;
+      padding-left: 15px !important;
+   }
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
+   .tokenomiks {
+      padding-right: 15px !important;
+      padding-left: 15px !important;
+   }
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
+
+   .tokenomiks {
+    padding-right: 15px !important;
+    padding-left: 15px !important;
+ }
+ .tokenomiks_wrapper {
+    flex-direction: column;
+    max-width: 100% !important;
+ }
+ .tokenomiks_col2{
+  margin: 50px auto !important;
+ }
+ .tokenomiks_col {
+  display: flex;
+  flex-direction: row !important;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 60px !important;
+  .tokenomiks_col_item{
+      max-width: 425px;
+  }
+}
 }
 
 @media (min-width: 1200px) and (max-width: 1399.98px) {
+   .tokenomiks {
+      padding-right: 15px !important;
+      padding-left: 15px !important;
+   }
+   .tokenomiks_wrapper {
+      flex-direction: column;
+      max-width: 95% !important;
+   }
+   .tokenomiks_col2{
+    margin: 50px auto !important;
+   }
+   .tokenomiks_col {
+    display: flex;
+    flex-direction: row !important;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 60px !important;
+    .tokenomiks_col_item{
+        max-width: 515px;
+    }
+ }
    .element-animation {
       /* Скроем элемент в начальном состоянии */
       opacity: 0;
@@ -1113,10 +1168,13 @@ body {
       /* Скроем элемент в начальном состоянии */
       opacity: 0;
    }
-
    .element-show {
       opacity: 1;
       transition: opacity 1s !important;
+   }
+   .tokenomiks {
+      padding-right: 30px !important;
+      padding-left: 30px !important;
    }
 }
 
