@@ -22,22 +22,6 @@ menu_btn.addEventListener("click", toggleMenu);
 menu_close.addEventListener("click", toggleMenu);
 menuLinks.forEach( link => link.addEventListener("click", toggleMenu))
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 window.onload = function () {
    document.body.classList.add("loaded_hiding");
    window.setTimeout(function () {
@@ -81,95 +65,43 @@ for (let anchor of anchors) {
 }
 
 
+$('.slider_wrapper').slick({
+    infinite: true,
+    slidesToShow: 4,
+    slidesToScroll: 2,
+    arrows: false,
+    dots: true,
+    responsive: [
+        {
+          breakpoint: 1500,
+          settings: {
+            infinite: true,
+            slidesToShow: 3,
+            slidesToScroll: 2,
+            arrows: false,
+            dots: true
+          }
+        },
+        {
+            breakpoint: 1100,
+            settings: {
+              infinite: true,
+              slidesToShow: 2,
+              slidesToScroll: 2,
+              arrows: false,
+              dots: true
+            }
+          },
+          {
+            breakpoint: 768,
+            settings: {
+              infinite: true,
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              arrows: false,
+              dots: true
+            }
+          },
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// const menu_btn = document.querySelector(".mobile_menu");
-// const menu_wrapper = document.querySelector(".mobile_menu_wrapper");
-// const menu_close = document.querySelector(".closeMenu");
-// const body_hidden = document.querySelectorAll(".mobile_opened");
-// const menu_link = document.getElementById("menu_link");
-// const menu_link1 = document.getElementById("menu_link1");
-// const menu_link2 = document.getElementById("menu_link2");
-// const menu_link3 = document.getElementById("menu_link3");
-// const menu_link4 = document.getElementById("menu_link4");
-// const menu_link5 = document.getElementById("menu_link5");
-// const menu_link6 = document.getElementById("menu_link6");
-// const menu_link7 = document.getElementById("menu_link7");
-// const menu_link8 = document.getElementById("menu_link8");
-
-
-
-// const menuWrapper = () => {
-//    menu_wrapper.classList.toggle("right_0");
-// };
-// const appenedClasses = () => {
-//     body_hidden.forEach((item) => {
-//        item.classList.toggle("body_hide");
-//     });
-//  };
-// //  const removeClasses = () => {
-// //     body_hidden.forEach((item) => {
-// //        item.classList.toggle("body_hide");
-// //     });
-// //  };
-// menu_btn.addEventListener("click", () => {
-//    menuWrapper();
-//    appenedClasses();
-// });
-// menu_close.addEventListener("click", () => {
-//    appenedClasses();
-//    menuWrapper();
-// });
-
-// menu_link.addEventListener("click", () => {
-//     appenedClasses();
-//     menuWrapper();
-// });
-// menu_link1.addEventListener("click", () => {
-//     appenedClasses();
-//     menuWrapper();
-// });
-// menu_link2.addEventListener("click", () => {
-//     appenedClasses();
-//     menuWrapper();
-// });
-// menu_link3.addEventListener("click", () => {
-//     appenedClasses();
-//     menuWrapper();
-// });
-// menu_link4.addEventListener("click", () => {
-//     appenedClasses();
-//     menuWrapper();
-// });
-// menu_link5.addEventListener("click", () => {
-//     appenedClasses();
-//     menuWrapper();
-// });
-// menu_link6.addEventListener("click", () => {
-//     appenedClasses();
-//     menuWrapper();
-// });
-// menu_link7.addEventListener("click", () => {
-//     appenedClasses();
-//     menuWrapper();
-// });
-// menu_link8.addEventListener("click", () => {
-//     appenedClasses();
-//     menuWrapper();
-// });
-
+      ]
+  });
