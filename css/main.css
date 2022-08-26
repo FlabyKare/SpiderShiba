@@ -1231,6 +1231,10 @@
   }
 }
 @media (min-width: 320px) and (max-width: 575.98px) {
+  .accordion {
+    padding-right: 17px !important;
+    padding-left: 17px !important;
+  }
   .accordion-list h3 {
     font-size: 16px !important;
     line-height: 19px !important;
@@ -1240,6 +1244,12 @@
   }
   .accordion-list li {
     padding: 20px 20px 20px 18px !important;
+  }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .accordion {
+    padding-right: 17px !important;
+    padding-left: 17px !important;
   }
 }
 html,
