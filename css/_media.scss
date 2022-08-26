@@ -1083,6 +1083,9 @@ body {
 }
 
 @media (min-width: 320px) and (max-width: 575.98px) {
+   .team {
+      padding-bottom: 73px !important;
+   }
    .tokenomiks {
       padding-right: 15px !important;
       padding-left: 15px !important;
@@ -1127,6 +1130,9 @@ body {
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
+   .team {
+      padding-bottom: 73px !important;
+   }
    .tokenomiks {
       padding-right: 15px !important;
       padding-left: 15px !important;
@@ -1162,6 +1168,9 @@ body {
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
+   .team {
+      padding-bottom: 73px !important;
+   }
    .tokenomiks {
       padding-right: 15px !important;
       padding-left: 15px !important;
@@ -1191,6 +1200,9 @@ body {
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
+   .accordion {
+      padding: 70px 0 150px !important;
+   }
    .tokenomiks {
       padding-right: 15px !important;
       padding-left: 15px !important;
@@ -1218,6 +1230,9 @@ body {
 }
 
 @media (min-width: 1200px) and (max-width: 1399.98px) {
+   .accordion {
+      padding: 70px 0 150px !important;
+   }
    .tokenomiks_wrapper_mobile {
       display: none !important;
    }
@@ -1233,6 +1248,9 @@ body {
 }
 
 @media (min-width: 1400px) {
+   .accordion {
+      padding: 70px 0 150px !important;
+   }
    .tokenomiks_wrapper_mobile {
       display: none !important;
    }
@@ -1277,6 +1295,18 @@ body {
 // Intro
 
 @media (min-width: 320px) and (max-width: 575.98px) {
+   .accordion-list {
+      h3 {
+         font-size: 16px !important;
+         line-height: 19px !important;
+         span{
+            margin-left: 15px !important;
+         }
+      }
+      li{
+        padding: 20px 20px 20px 18px !important;
+      }
+   }
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {

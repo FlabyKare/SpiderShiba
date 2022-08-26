@@ -982,6 +982,9 @@
   }
 }
 @media (min-width: 320px) and (max-width: 575.98px) {
+  .team {
+    padding-bottom: 73px !important;
+  }
   .tokenomiks {
     padding-right: 15px !important;
     padding-left: 15px !important;
@@ -1032,6 +1035,9 @@
   }
 }
 @media (min-width: 576px) and (max-width: 767.98px) {
+  .team {
+    padding-bottom: 73px !important;
+  }
   .tokenomiks {
     padding-right: 15px !important;
     padding-left: 15px !important;
@@ -1074,6 +1080,9 @@
   }
 }
 @media (min-width: 768px) and (max-width: 991.98px) {
+  .team {
+    padding-bottom: 73px !important;
+  }
   .tokenomiks {
     padding-right: 15px !important;
     padding-left: 15px !important;
@@ -1110,6 +1119,9 @@
   }
 }
 @media (min-width: 992px) and (max-width: 1199.98px) {
+  .accordion {
+    padding: 70px 0 150px !important;
+  }
   .tokenomiks {
     padding-right: 15px !important;
     padding-left: 15px !important;
@@ -1147,6 +1159,9 @@
   }
 }
 @media (min-width: 1200px) and (max-width: 1399.98px) {
+  .accordion {
+    padding: 70px 0 150px !important;
+  }
   .tokenomiks_wrapper_mobile {
     display: none !important;
   }
@@ -1161,6 +1176,9 @@
   }
 }
 @media (min-width: 1400px) {
+  .accordion {
+    padding: 70px 0 150px !important;
+  }
   .tokenomiks_wrapper_mobile {
     display: none !important;
   }
@@ -1210,6 +1228,18 @@
   }
   .tokenomiks_col .tokenomiks_col_item {
     max-width: 515px;
+  }
+}
+@media (min-width: 320px) and (max-width: 575.98px) {
+  .accordion-list h3 {
+    font-size: 16px !important;
+    line-height: 19px !important;
+  }
+  .accordion-list h3 span {
+    margin-left: 15px !important;
+  }
+  .accordion-list li {
+    padding: 20px 20px 20px 18px !important;
   }
 }
 html,
@@ -2625,4 +2655,96 @@ h1 span {
   line-height: 24px;
   color: #ffffff;
   opacity: 0.3;
+}
+
+.accordion {
+  background: #101932;
+  padding: 69px 0 75px;
+}
+
+.accordion_wrapper {
+  width: 100%;
+  max-width: 1036px;
+  margin: 48px auto 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+
+ul.accordion-list {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: auto;
+  padding: 20px;
+  margin: 0;
+  list-style: none;
+}
+ul.accordion-list li {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: auto;
+  background: #384d70;
+  border-radius: 15px;
+  padding: 17px 25px 18px 30px;
+  margin: 0 auto 25px auto;
+  cursor: pointer;
+}
+ul.accordion-list li.active h3 span {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+ul.accordion-list li h3 {
+  font-family: "SF Pro Display Semibold";
+  font-size: 20px;
+  line-height: 24px;
+  color: #ffffff;
+  position: relative;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: auto;
+  padding: 0 0 0 0;
+  margin: 0;
+  cursor: pointer;
+}
+ul.accordion-list li h3 span {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+ul.accordion-list li div.answer {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 20px 0 0 0;
+  padding: 0;
+  cursor: pointer;
+}
+ul.accordion-list li div.answer p {
+  position: relative;
+  display: block;
+  font-family: "SF Pro Display Semibold";
+  font-size: 18px;
+  line-height: 24px;
+  opacity: 0.5;
+  color: #ffffff;
+  padding: 10px 0 0 0;
+  cursor: pointer;
+  margin: 0 0 15px 0;
 }

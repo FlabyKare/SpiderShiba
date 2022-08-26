@@ -1218,3 +1218,102 @@ h1 {
    color: #ffffff;
    opacity: 0.3;
 }
+
+.accordion {
+   background: #101932;
+   padding: 69px 0 75px;
+}
+.accordion_wrapper {
+   width: 100%;
+   max-width: 1036px;
+   margin: 48px auto 0;
+   transition: 0.5s;
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+}
+
+
+ul.accordion-list {
+   position: relative;
+   display: block;
+   width: 100%;
+   height: auto;
+   padding: 20px;
+   margin: 0;
+   list-style: none;
+
+   li {
+      position: relative;
+      display: block;
+      width: 100%;
+      height: auto;
+      background: #384d70;
+      border-radius: 15px;
+      padding: 17px 25px 18px 30px;
+      margin: 0 auto 25px auto;
+      cursor: pointer;
+
+      &.active {
+         h3 {
+            span {
+               transform: rotate(180deg);
+            }
+         }
+      }
+
+      h3 {
+         font-family: $font_600;
+         font-size: 20px;
+         line-height: 24px;
+         color: #ffffff;
+         position: relative;
+         justify-content: space-between;
+         align-items: center;
+         display: flex;
+         width: 100%;
+         height: auto;
+         padding: 0 0 0 0;
+         margin: 0;
+         cursor: pointer;
+         span{
+            transition: 0.5s;
+
+         }
+
+         //  &:after {
+         //     content: "";
+         //     background: url(../img/Accordion/arrow.png);
+         //     width: auto;
+         //     height: auto;
+         //     position: absolute;
+         //     right: 0;
+         //     top: 0;
+         //     transition: all 0.3s ease-in-out;
+         //  }
+      }
+
+      div.answer {
+         position: relative;
+         display: block;
+         width: 100%;
+         height: auto;
+         margin: 20px 0 0 0;
+         padding: 0;
+         cursor: pointer;
+
+         p {
+            position: relative;
+            display: block;
+            font-family: $font_600;
+            font-size: 18px;
+            line-height: 24px;
+            opacity: .5;
+            color: #ffffff;
+            padding: 10px 0 0 0;
+            cursor: pointer;
+            margin: 0 0 15px 0;
+         }
+      }
+   }
+}
