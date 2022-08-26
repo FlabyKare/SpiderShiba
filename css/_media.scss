@@ -1082,12 +1082,47 @@ body {
    //  }
 }
 
-// Tokenomiks
-
 @media (min-width: 320px) and (max-width: 575.98px) {
    .tokenomiks {
       padding-right: 15px !important;
       padding-left: 15px !important;
+   }
+   .tokenomiks {
+      padding-right: 15px !important;
+      padding-left: 15px !important;
+   }
+   .tokenomiks {
+      padding-right: 15px !important;
+      padding-left: 15px !important;
+   }
+   .tokenomiks_col_item_title {
+      font-size: 25px !important;
+   }
+   .tokenomiks_wrapper {
+      display: none !important;
+   }
+   .tokenomiks_col2 {
+      margin: 50px auto !important;
+      width: 100% !important;
+   }
+   .tokenomiks_wrapper_mobile {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+   }
+   .mobile_tokenomiks_graphic {
+      margin: 50px auto 0;
+      width: 94%;
+   }
+
+   .tokenomiks_col_item {
+      margin: 0 25px;
+      &:hover {
+         transform: scale(1) !important;
+      }
+   }
+   .tokenomiks_wrapper {
+      display: none !important;
    }
 }
 
@@ -1096,6 +1131,34 @@ body {
       padding-right: 15px !important;
       padding-left: 15px !important;
    }
+   .tokenomiks {
+      padding-right: 15px !important;
+      padding-left: 15px !important;
+   }
+   .tokenomiks_wrapper {
+      display: none !important;
+   }
+   .tokenomiks_col2 {
+      margin: 50px auto !important;
+   }
+   .tokenomiks_wrapper_mobile {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+   }
+   .mobile_tokenomiks_graphic {
+      margin: 50px auto 0;
+      width: 94%;
+   }
+   .tokenomiks_col_item {
+      margin: 0 25px;
+      &:hover {
+         transform: scale(1) !important;
+      }
+   }
+   .tokenomiks_wrapper {
+      display: none !important;
+   }
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
@@ -1103,55 +1166,61 @@ body {
       padding-right: 15px !important;
       padding-left: 15px !important;
    }
+   .tokenomiks_wrapper {
+      display: none !important;
+   }
+   .tokenomiks_col2 {
+      margin: 50px auto !important;
+   }
+   .tokenomiks_wrapper_mobile {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+   }
+   .mobile_tokenomiks_graphic {
+      margin: 50px auto 0;
+      width: 100%;
+      max-width: 724px;
+   }
+   .tokenomiks_col_item {
+      margin: 0 25px;
+      &:hover {
+         transform: scale(1) !important;
+      }
+   }
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
-
-   .tokenomiks {
-    padding-right: 15px !important;
-    padding-left: 15px !important;
- }
- .tokenomiks_wrapper {
-    flex-direction: column;
-    max-width: 100% !important;
- }
- .tokenomiks_col2{
-  margin: 50px auto !important;
- }
- .tokenomiks_col {
-  display: flex;
-  flex-direction: row !important;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 60px !important;
-  .tokenomiks_col_item{
-      max-width: 425px;
-  }
-}
-}
-
-@media (min-width: 1200px) and (max-width: 1399.98px) {
    .tokenomiks {
       padding-right: 15px !important;
       padding-left: 15px !important;
    }
    .tokenomiks_wrapper {
       flex-direction: column;
-      max-width: 95% !important;
+      max-width: 100% !important;
    }
-   .tokenomiks_col2{
-    margin: 50px auto !important;
+   .tokenomiks_wrapper_mobile {
+      display: none !important;
+   }
+   .tokenomiks_col2 {
+      margin: 50px auto !important;
    }
    .tokenomiks_col {
-    display: flex;
-    flex-direction: row !important;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 60px !important;
-    .tokenomiks_col_item{
-        max-width: 515px;
-    }
- }
+      display: flex;
+      flex-direction: row !important;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 60px !important;
+      .tokenomiks_col_item {
+         max-width: 425px;
+      }
+   }
+}
+
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+   .tokenomiks_wrapper_mobile {
+      display: none !important;
+   }
    .element-animation {
       /* Скроем элемент в начальном состоянии */
       opacity: 0;
@@ -1164,6 +1233,9 @@ body {
 }
 
 @media (min-width: 1400px) {
+   .tokenomiks_wrapper_mobile {
+      display: none !important;
+   }
    .element-animation {
       /* Скроем элемент в начальном состоянии */
       opacity: 0;
@@ -1175,6 +1247,30 @@ body {
    .tokenomiks {
       padding-right: 30px !important;
       padding-left: 30px !important;
+   }
+}
+
+@media (min-width: 1200px) and (max-width: 1499.98px) {
+   .tokenomiks {
+      padding-right: 15px !important;
+      padding-left: 15px !important;
+   }
+   .tokenomiks_wrapper {
+      flex-direction: column;
+      max-width: 95% !important;
+   }
+   .tokenomiks_col2 {
+      margin: 50px auto !important;
+   }
+   .tokenomiks_col {
+      display: flex;
+      flex-direction: row !important;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 60px !important;
+      .tokenomiks_col_item {
+         max-width: 515px;
+      }
    }
 }
 
