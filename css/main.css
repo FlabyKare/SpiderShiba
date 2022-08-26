@@ -1235,6 +1235,9 @@
     padding-right: 17px !important;
     padding-left: 17px !important;
   }
+  .accordion-list {
+    padding: 0 !important;
+  }
   .accordion-list h3 {
     font-size: 16px !important;
     line-height: 19px !important;
@@ -1245,11 +1248,27 @@
   .accordion-list li {
     padding: 20px 20px 20px 18px !important;
   }
+  .section_title {
+    font-size: 40px !important;
+  }
 }
 @media (min-width: 576px) and (max-width: 767.98px) {
   .accordion {
     padding-right: 17px !important;
     padding-left: 17px !important;
+  }
+  .accordion-list {
+    padding: 0 !important;
+  }
+  .accordion-list h3 {
+    font-size: 16px !important;
+    line-height: 19px !important;
+  }
+  .accordion-list h3 span {
+    margin-left: 15px !important;
+  }
+  .accordion-list li {
+    padding: 20px 20px 20px 18px !important;
   }
 }
 html,

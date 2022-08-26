@@ -1300,6 +1300,8 @@ body {
         padding-left: 17px !important;
     }
    .accordion-list {
+    padding: 0 !important;
+
       h3 {
          font-size: 16px !important;
          line-height: 19px !important;
@@ -1311,6 +1313,9 @@ body {
         padding: 20px 20px 20px 18px !important;
       }
    }
+   .section_title{
+    font-size: 40px !important;
+   }
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
@@ -1318,6 +1323,19 @@ body {
         padding-right: 17px !important;
         padding-left: 17px !important;
     }
+    .accordion-list {
+        padding: 0 !important;
+        h3 {
+           font-size: 16px !important;
+           line-height: 19px !important;
+           span{
+              margin-left: 15px !important;
+           }
+        }
+        li{
+          padding: 20px 20px 20px 18px !important;
+        }
+     }
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
