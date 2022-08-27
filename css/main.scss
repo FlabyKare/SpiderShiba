@@ -1428,8 +1428,10 @@ ul.accordion-list {
    }
 }
 .img_bg {
-   transition: 0.7s;
+   transition: 0.5s;
    background-repeat: no-repeat;
+   background-size: cover !important;
+
 }
 .img_bg1 {
    background: url(../img/Footer/1telegram.svg);
