@@ -22,15 +22,10 @@ menu_btn.addEventListener("click", toggleMenu);
 menu_close.addEventListener("click", toggleMenu);
 menuLinks.forEach((link) => link.addEventListener("click", toggleMenu));
 
-
-
-
 // const accordionItem = document.querySelector('.accordion__item')
 // const accordionItem2 = document.querySelector('.accordion__item2')
 // const accordionItem3 = document.querySelector('.accordion__item3')
 // const accordionItem4 = document.querySelector('.accordion__item4')
-
-
 
 // function toggleHeight1(){
 //     accordionItem.classList.toggle("heightFitContent");
@@ -58,52 +53,20 @@ menuLinks.forEach((link) => link.addEventListener("click", toggleMenu));
 //     toggleHeight4()
 // })
 
+$(document).ready(function () {
+   $(".accordion-list > li > .answer").hide();
 
-
-$(document).ready(function(){
-    $('.accordion-list > li > .answer').hide();
-      
-    $('.accordion-list > li').click(function() {
+   $(".accordion-list > li").click(function () {
       if ($(this).hasClass("active")) {
-        $(this).removeClass("active").find(".answer").slideUp();
+         $(this).removeClass("active").find(".answer").slideUp();
       } else {
-        $(".accordion-list > li.active .answer").slideUp();
-        $(".accordion-list > li.active").removeClass("active");
-        $(this).addClass("active").find(".answer").slideDown();
+         $(".accordion-list > li.active .answer").slideUp();
+         $(".accordion-list > li.active").removeClass("active");
+         $(this).addClass("active").find(".answer").slideDown();
       }
       return false;
-    });
-    
-  });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+   });
+});
 
 window.onload = function () {
    document.body.classList.add("loaded_hiding");
@@ -124,11 +87,13 @@ function onEntry(entry) {
 let options = {
    threshold: [0.5],
 };
+
 let observer = new IntersectionObserver(onEntry, options);
 let elements = document.querySelectorAll(".element-animation");
 for (let elm of elements) {
    observer.observe(elm);
 }
+
 const anchors = document.querySelectorAll('a[href*="#"]');
 for (let anchor of anchors) {
    anchor.addEventListener("click", function (e) {

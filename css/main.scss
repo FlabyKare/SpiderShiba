@@ -182,8 +182,8 @@ body {
       border-radius: 20px;
       cursor: pointer !important;
    }
-   &::-webkit-scrollbar-button{
-    display: none;
+   &::-webkit-scrollbar-button {
+      display: none;
    }
 }
 
@@ -417,6 +417,14 @@ h1 {
    padding: 14px 0 14px 30px;
    width: 100%;
    max-width: 699px;
+   transition: 0.5s;
+   cursor: pointer;
+   * {
+      cursor: pointer;
+   }
+   &:hover {
+      border: 1px solid rgba(255, 255, 255, 0.5);
+   }
 }
 .header_info_col_code_title {
    font-size: 15px;
@@ -523,9 +531,9 @@ h1 {
 }
 .how_it_works_wrapper {
    position: relative;
-    .partners_icons_item{
-        opacity: 0.25;
-    }
+   .partners_icons_item {
+      opacity: 0.25;
+   }
 }
 .img_red {
    left: 30%;
@@ -669,6 +677,10 @@ h1 {
    background: #384d70;
    border-radius: 20px;
    transition: 0.5s;
+   cursor: pointer;
+   * {
+      cursor: pointer;
+   }
    &:hover {
       transform: scale(1.1);
    }
@@ -1350,7 +1362,7 @@ ul.accordion-list {
    border-radius: 15px;
    width: 60px;
    height: 60px;
-   transition: 0.7s;
+   transition: 0.5s;
    cursor: pointer;
    * {
       cursor: pointer;
