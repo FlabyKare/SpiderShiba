@@ -2104,6 +2104,9 @@ h1 span {
 .how_it_works_wrapper {
   position: relative;
 }
+.how_it_works_wrapper .partners_icons_item {
+  opacity: 0.25;
+}
 
 .img_red {
   left: 30%;
