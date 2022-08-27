@@ -932,19 +932,7 @@ body {
 }
 
 @media (min-width: 1400px) {
-   .services_cards_item {
-      .card_item_img {
-         width: 120px;
-         height: 120px;
-         transition: 0.5s;
-         img {
-            width: 100%;
-         }
-         &:hover {
-            transform: scale(1.1);
-         }
-      }
-   }
+
 }
 
 // Preloader
