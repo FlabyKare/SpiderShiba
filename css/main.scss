@@ -170,14 +170,20 @@ body {
    &::-webkit-scrollbar {
       z-index: 999999999999999999999999999999999999 !important;
       background: #101932;
+      transition: 0.5s;
    }
    &::-webkit-scrollbar-track {
       z-index: 999999999999999999999999999999999999 !important;
+      transition: 0.5s;
    }
    &::-webkit-scrollbar-thumb {
       z-index: 999999999999999999999999999999999999 !important;
       background: #2848a8;
       border-radius: 20px;
+      cursor: pointer !important;
+   }
+   &::-webkit-scrollbar-button{
+    display: none;
    }
 }
 
@@ -235,18 +241,19 @@ nav {
                content: "";
                width: 100%;
                opacity: 1;
+               right: 0 !important;
             }
          }
          &::after {
             content: "";
             width: 2%;
-            height: 3px;
+            height: 2px;
             position: absolute;
             border-radius: 10px;
             background: #cfd1d8;
             opacity: 0;
             transition: 0.4s;
-            left: 0;
+            right: 0;
             bottom: -10px;
          }
       }

@@ -1682,14 +1682,22 @@ body {
 body::-webkit-scrollbar {
   z-index: 999999999999999900000000000000000000 !important;
   background: #101932;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 body::-webkit-scrollbar-track {
   z-index: 999999999999999900000000000000000000 !important;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 body::-webkit-scrollbar-thumb {
   z-index: 999999999999999900000000000000000000 !important;
   background: #2848a8;
   border-radius: 20px;
+  cursor: pointer !important;
+}
+body::-webkit-scrollbar-button {
+  display: none;
 }
 
 header {
@@ -1767,18 +1775,19 @@ nav {
   content: "";
   width: 100%;
   opacity: 1;
+  right: 0 !important;
 }
 .desktop_menu .links a::after {
   content: "";
   width: 2%;
-  height: 3px;
+  height: 2px;
   position: absolute;
   border-radius: 10px;
   background: #cfd1d8;
   opacity: 0;
   -webkit-transition: 0.4s;
   transition: 0.4s;
-  left: 0;
+  right: 0;
   bottom: -10px;
 }
 
