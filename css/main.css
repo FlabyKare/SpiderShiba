@@ -2492,6 +2492,8 @@ h1 span {
   display: -ms-flexbox;
   display: flex;
   gap: 188px;
+  max-width: 1736px;
+  margin: auto;
 }
 
 .play_wrapper_col3_item1_title {
@@ -2982,6 +2984,19 @@ h1 span {
   opacity: 0.3;
 }
 
+.play_wrapper_col3_item2_subitem_img {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.play_wrapper_col3_item2_subitem_img * {
+  cursor: pointer;
+}
+.play_wrapper_col3_item2_subitem_img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
 .accordion {
   background: #101932;
   padding: 69px 0 75px;
@@ -3214,6 +3229,16 @@ ul.accordion-list li div.answer p {
   max-width: 699px;
   margin: auto;
   text-align: left;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  border: 1px solid rgba(255, 255, 255, 0);
+  cursor: pointer;
+}
+.footer_hach_code * {
+  cursor: pointer;
+}
+.footer_hach_code:hover {
+  border: 1px solid rgba(255, 255, 255, 0.5);
 }
 
 .footer_hach_code_title {

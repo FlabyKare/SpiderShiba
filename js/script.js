@@ -114,6 +114,8 @@ $(".slider_wrapper").slick({
    slidesToScroll: 2,
    arrows: false,
    dots: true,
+   autoplay: true,
+   autoplayspeed: 3000,
    responsive: [
       {
          breakpoint: 1500,
@@ -154,4 +156,6 @@ $(".mobile_tokenomiks_items").slick({
    slidesToScroll: 1,
    arrows: false,
    dots: false,
+   autoplay: true,
+   autoplayspeed: 3000,
 });

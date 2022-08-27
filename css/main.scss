@@ -825,6 +825,8 @@ h1 {
    width: 100%;
    display: flex;
    gap: 188px;
+   max-width: 1736px;
+   margin: auto;
 }
 
 .play_wrapper_col3_item1_title {
@@ -1240,7 +1242,16 @@ h1 {
    color: #ffffff;
    opacity: 0.3;
 }
-
+.play_wrapper_col3_item2_subitem_img {
+   transition: 0.5s;
+   cursor: pointer;
+   * {
+      cursor: pointer;
+   }
+   &:hover {
+      transform: scale(1.1);
+   }
+}
 .accordion {
    background: #101932;
    padding: 69px 0 75px;
@@ -1431,7 +1442,6 @@ ul.accordion-list {
    transition: 0.5s;
    background-repeat: no-repeat;
    background-size: cover !important;
-
 }
 .img_bg1 {
    background: url(../img/Footer/1telegram.svg);
@@ -1476,6 +1486,16 @@ ul.accordion-list {
    max-width: 699px;
    margin: auto;
    text-align: left;
+   transition: 0.5s;
+   border: 1px solid rgba(255, 255, 255, 0);
+   cursor: pointer;
+
+   * {
+      cursor: pointer;
+   }
+   &:hover {
+      border: 1px solid rgba(255, 255, 255, 0.5);
+   }
 }
 .footer_hach_code_title {
    font-family: $font_500;
