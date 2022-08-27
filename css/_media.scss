@@ -9,6 +9,13 @@ body {
       min-height: 800px !important;
    }
 }
+.body_hide {
+    // position: absolute !important;
+    // top: -1500%;
+    // left: 0;
+    // opacity: 0 !important;
+    display: none !important;
+ }
 @media (max-width: 1089.98px) {
    .desktop_menu {
       display: none !important;
@@ -49,12 +56,7 @@ body {
       position: relative;
    }
 
-   .body_hide {
-      position: absolute;
-      top: -1500%;
-      left: 0;
-      opacity: 0 !important;
-   }
+
    .right_0 {
       right: 0 !important;
       .mobile_menu {
