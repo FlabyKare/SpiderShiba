@@ -10,12 +10,12 @@ body {
    }
 }
 .body_hide {
-    // position: absolute !important;
-    // top: -1500%;
-    // left: 0;
-    // opacity: 0 !important;
-    display: none !important;
- }
+   // position: absolute !important;
+   // top: -1500%;
+   // left: 0;
+   // opacity: 0 !important;
+   display: none !important;
+}
 @media (max-width: 1089.98px) {
    .desktop_menu {
       display: none !important;
@@ -55,7 +55,6 @@ body {
    header {
       position: relative;
    }
-
 
    .right_0 {
       right: 0 !important;
@@ -933,24 +932,28 @@ body {
 }
 
 @media (min-width: 1400px) {
-    .services_cards_item{
-        .card_item_img{
-            width: 120px;
-            height: 120px;
-            transition: 0.5s;
-            img{
-                width: 100%;
-            }
-            &:hover{
-                transform: scale(1.1);
-            }
-        }
-    }
+   .services_cards_item {
+      .card_item_img {
+         width: 120px;
+         height: 120px;
+         transition: 0.5s;
+         img {
+            width: 100%;
+         }
+         &:hover {
+            transform: scale(1.1);
+         }
+      }
+   }
 }
 
 // Preloader
 
 @media (min-width: 320px) and (max-width: 575.98px) {
+   .play_wrapper_col3_item2_subitem_img {
+      width: fit-content;
+      margin: auto;
+   }
    .road_line_wrapper {
       display: none !important;
    }
@@ -959,9 +962,6 @@ body {
    }
    .road_line_col_item_info_list {
       padding-right: 15px !important;
-   }
-   .road_line_col_item_number {
-      margin: auto;
    }
    .road_line {
       .section_title {
@@ -998,14 +998,15 @@ body {
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
+   .play_wrapper_col3_item2_subitem_img {
+      width: fit-content;
+      margin: auto;
+   }
    .road_line_wrapper {
       display: none !important;
    }
    .road_line_col_item_info_list {
       padding-right: 15px !important;
-   }
-   .road_line_col_item_number {
-      margin: auto;
    }
    .road_line {
       .section_title {

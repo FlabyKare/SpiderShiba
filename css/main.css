@@ -883,6 +883,12 @@
   }
 }
 @media (min-width: 320px) and (max-width: 575.98px) {
+  .play_wrapper_col3_item2_subitem_img {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: auto;
+  }
   .road_line_wrapper {
     display: none !important;
   }
@@ -891,9 +897,6 @@
   }
   .road_line_col_item_info_list {
     padding-right: 15px !important;
-  }
-  .road_line_col_item_number {
-    margin: auto;
   }
   .road_line .section_title {
     margin-bottom: 50px;
@@ -926,14 +929,17 @@
   }
 }
 @media (min-width: 576px) and (max-width: 767.98px) {
+  .play_wrapper_col3_item2_subitem_img {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: auto;
+  }
   .road_line_wrapper {
     display: none !important;
   }
   .road_line_col_item_info_list {
     padding-right: 15px !important;
-  }
-  .road_line_col_item_number {
-    margin: auto;
   }
   .road_line .section_title {
     margin-bottom: 50px;
