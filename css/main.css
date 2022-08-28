@@ -3106,8 +3106,8 @@ ul.accordion-list li div.answer p {
   border-radius: 15px;
   width: 60px;
   height: 60px;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
   cursor: pointer;
 }
 .footer_icons_item:hover {
@@ -3121,86 +3121,83 @@ ul.accordion-list li div.answer p {
 .footer_icons_item1 {
   padding: 30px 25px;
 }
-.footer_icons_item1:hover .img_bg1 {
-  background: url(../img/Footer/1_blue.png);
+.footer_icons_item1:hover .img_bg1 path {
+  fill: #29a9eb;
 }
 
 .footer_icons_item2 {
   padding: 30px 25px 30px 24px;
 }
-.footer_icons_item2:hover .img_bg2 {
-  background: url(../img/Footer/2_blue.png);
+.footer_icons_item2:hover .img_bg2 path {
+  fill: #40abe2;
 }
 
 .footer_icons_item3 {
   padding: 30px;
 }
-.footer_icons_item3:hover .img_bg3 {
-  background: url(../img/Footer/3_black.png);
+.footer_icons_item3:hover .img_bg3 path {
+  fill: #000;
 }
 
 .footer_icons_item4 {
   padding: 30px;
 }
-.footer_icons_item4:hover .img_bg4 {
-  background: url(../img/Footer/4_blue.png);
+.footer_icons_item4:hover .img_bg4 path {
+  fill: #375591;
 }
 
 .footer_icons_item5 {
   padding: 30px;
 }
-.footer_icons_item5:hover .img_bg5 {
-  background: url(../img/Footer/5_gold.png);
+.footer_icons_item5:hover .img_bg5 path {
+  fill: gold;
 }
 
 .footer_icons_item6 {
   padding: 30px;
 }
-.footer_icons_item6:hover .img_bg6 {
-  background: url(../img/Footer/6_color.png);
+.footer_icons_item6:hover .img_bg6 path {
+  fill: url(#instagrad);
 }
 
-.img_bg {
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  background-repeat: no-repeat;
-  background-size: cover !important;
+.img_bg svg,
+.img_bg path {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .img_bg1 {
-  background: url(../img/Footer/1.png);
   width: 32px;
   height: 26.67px;
 }
 
 .img_bg2 {
-  background: url(../img/Footer/2.png);
   width: 32.78px;
   height: 26.67px;
 }
 
 .img_bg3 {
-  background: url(../img/Footer/3.png);
   width: 26.67px;
   height: 26.67px;
 }
 
 .img_bg4 {
-  background: url(../img/Footer/4.png);
   width: 26.67px;
   height: 26.67px;
 }
 
 .img_bg5 {
-  background: url(../img/Footer/5.png);
   width: 26.67px;
   height: 26.67px;
 }
 
 .img_bg6 {
-  background: url(../img/Footer/6.png);
   width: 26.67px;
   height: 26.67px;
+}
+.img_bg6 stop {
+  -webkit-transition: 2s ease !important;
+  transition: 2s ease !important;
 }
 
 .footer_cat {

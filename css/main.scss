@@ -1384,9 +1384,10 @@ ul.accordion-list {
    border-radius: 15px;
    width: 60px;
    height: 60px;
-   transition: 0.5s;
+   transition: all 0.5s ease;
    cursor: pointer;
    &:hover {
+      //   background: #b33e3e;
       transform: scale(1.2);
    }
    * {
@@ -1398,7 +1399,9 @@ ul.accordion-list {
 
    &:hover {
       .img_bg1 {
-         background: url(../img/Footer/1_blue.png);
+         path {
+            fill: #29a9eb;
+         }
       }
    }
 }
@@ -1407,7 +1410,9 @@ ul.accordion-list {
 
    &:hover {
       .img_bg2 {
-         background: url(../img/Footer/2_blue.png);
+         path {
+            fill: #40abe2;
+         }
       }
    }
 }
@@ -1416,7 +1421,9 @@ ul.accordion-list {
 
    &:hover {
       .img_bg3 {
-         background: url(../img/Footer/3_black.png);
+         path {
+            fill: #000;
+         }
       }
    }
 }
@@ -1425,7 +1432,9 @@ ul.accordion-list {
 
    &:hover {
       .img_bg4 {
-         background: url(../img/Footer/4_blue.png);
+         path {
+            fill: #375591;
+         }
       }
    }
 }
@@ -1434,7 +1443,9 @@ ul.accordion-list {
 
    &:hover {
       .img_bg5 {
-         background: url(../img/Footer/5_gold.png);
+         path {
+            fill: gold;
+         }
       }
    }
 }
@@ -1443,53 +1454,53 @@ ul.accordion-list {
 
    &:hover {
       .img_bg6 {
-         background: url(../img/Footer/6_color.png);
+         path {
+            fill: url(#instagrad);
+         }
       }
    }
 }
 .img_bg {
-   transition: 0.5s;
-   background-repeat: no-repeat;
-   background-size: cover !important;
+   svg,
+   path {
+      transition: all 0.5s ease;
+   }
 }
 .img_bg1 {
-   background: url(../img/Footer/1.png);
    width: 32px;
    height: 26.67px;
 }
 .img_bg2 {
-   background: url(../img/Footer/2.png);
    width: 32.78px;
    height: 26.67px;
 }
 .img_bg3 {
-   background: url(../img/Footer/3.png);
    width: 26.67px;
    height: 26.67px;
 }
 .img_bg4 {
-   background: url(../img/Footer/4.png);
    width: 26.67px;
    height: 26.67px;
 }
 .img_bg5 {
-   background: url(../img/Footer/5.png);
    width: 26.67px;
    height: 26.67px;
 }
 .img_bg6 {
-   background: url(../img/Footer/6.png);
    width: 26.67px;
    height: 26.67px;
+   stop {
+    transition: 2s ease !important;
+}
 }
 
 .footer_cat {
    margin-top: 80px;
    margin-bottom: 50px;
-   transition: .5s;
+   transition: 0.5s;
    &:hover {
-    transform: scale(1.2);
- }
+      transform: scale(1.2);
+   }
 }
 .footer_hach_code {
    background: rgba(0, 0, 0, 0.3);
