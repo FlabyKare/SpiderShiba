@@ -1386,6 +1386,9 @@ ul.accordion-list {
    height: 60px;
    transition: 0.5s;
    cursor: pointer;
+   &:hover {
+      transform: scale(1.2);
+   }
    * {
       cursor: pointer;
    }
@@ -1396,7 +1399,6 @@ ul.accordion-list {
    &:hover {
       .img_bg1 {
          background: url(../img/Footer/1_blue.svg);
-         background-repeat: no-repeat;
       }
    }
 }
@@ -1406,7 +1408,6 @@ ul.accordion-list {
    &:hover {
       .img_bg2 {
          background: url(../img/Footer/2_blue.svg);
-         background-repeat: no-repeat;
       }
    }
 }
@@ -1416,7 +1417,6 @@ ul.accordion-list {
    &:hover {
       .img_bg3 {
          background: url(../img/Footer/3_dark.svg);
-         background-repeat: no-repeat;
       }
    }
 }
@@ -1426,7 +1426,6 @@ ul.accordion-list {
    &:hover {
       .img_bg4 {
          background: url(../img/Footer/4_blue.svg);
-         background-repeat: no-repeat;
       }
    }
 }
@@ -1436,7 +1435,6 @@ ul.accordion-list {
    &:hover {
       .img_bg5 {
          background: url(../img/Footer/5.svg);
-         background-repeat: no-repeat;
       }
    }
 }
@@ -1446,7 +1444,6 @@ ul.accordion-list {
    &:hover {
       .img_bg6 {
          background: url(../img/Footer/666.png);
-         background-repeat: no-repeat;
       }
    }
 }
@@ -1489,6 +1486,10 @@ ul.accordion-list {
 .footer_cat {
    margin-top: 80px;
    margin-bottom: 50px;
+   transition: .5s;
+   &:hover {
+    transform: scale(1.2);
+ }
 }
 .footer_hach_code {
    background: rgba(0, 0, 0, 0.3);
@@ -1507,6 +1508,7 @@ ul.accordion-list {
    }
    &:hover {
       border: 1px solid rgba(255, 255, 255, 0.5);
+      transform: scaleX(1.05);
    }
 }
 .footer_hach_code_title {

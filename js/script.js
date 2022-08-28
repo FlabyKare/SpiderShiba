@@ -157,5 +157,5 @@ $(".mobile_tokenomiks_items").slick({
    arrows: false,
    dots: false,
    autoplay: true,
-   autoplayspeed: 3000,
+   autoplayspeed: 2000,
 });
