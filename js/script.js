@@ -12,7 +12,6 @@ const appenedClasses = () => {
       item.classList.toggle("body_hide");
    });
 };
-
 function toggleMenu() {
    menuWrapper();
    appenedClasses();
@@ -21,37 +20,6 @@ function toggleMenu() {
 menu_btn.addEventListener("click", toggleMenu);
 menu_close.addEventListener("click", toggleMenu);
 menuLinks.forEach((link) => link.addEventListener("click", toggleMenu));
-
-// const accordionItem = document.querySelector('.accordion__item')
-// const accordionItem2 = document.querySelector('.accordion__item2')
-// const accordionItem3 = document.querySelector('.accordion__item3')
-// const accordionItem4 = document.querySelector('.accordion__item4')
-
-// function toggleHeight1(){
-//     accordionItem.classList.toggle("heightFitContent");
-// }
-// function toggleHeight2(){
-//     accordionItem2.classList.toggle("heightFitContent");
-// }
-// function toggleHeight3(){
-//     accordionItem3.classList.toggle("heightFitContent");
-// }
-// function toggleHeight4(){
-//     accordionItem4.classList.toggle("heightFitContent");
-// }
-
-// accordionItem.addEventListener("click", ()=> {
-//     toggleHeight1()
-// })
-// accordionItem2.addEventListener("click", ()=> {
-//     toggleHeight2()
-// })
-// accordionItem3.addEventListener("click", ()=> {
-//     toggleHeight3()
-// })
-// accordionItem4.addEventListener("click", ()=> {
-//     toggleHeight4()
-// })
 
 $(document).ready(function () {
    $(".accordion-list > li > .answer").hide();
