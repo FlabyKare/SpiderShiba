@@ -1385,6 +1385,7 @@ ul.accordion-list {
    width: 60px;
    height: 60px;
    transition: all 0.5s ease;
+   overflow: hidden;
    cursor: pointer;
    &:hover {
       transform: scale(1.2);
@@ -1474,19 +1475,19 @@ ul.accordion-list {
    height: 30px;
 }
 .img_bg3 {
-   width: 26.67px;
+   width: 35px;
    height: 30px;
 }
 .img_bg4 {
-   width: 26.67px;
+   width: 35px;
    height: 30px;
 }
 .img_bg5 {
-   width: 26.67px;
+   width: 35px;
    height: 30px;
 }
 .img_bg6 {
-   width: 26.67px;
+   width: 35px;
    height: 30px;
 }
 

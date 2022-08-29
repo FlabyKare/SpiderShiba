@@ -3108,6 +3108,7 @@ ul.accordion-list li div.answer p {
   height: 60px;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
+  overflow: hidden;
   cursor: pointer;
 }
 .footer_icons_item:hover {
@@ -3177,22 +3178,22 @@ ul.accordion-list li div.answer p {
 }
 
 .img_bg3 {
-  width: 26.67px;
+  width: 35px;
   height: 30px;
 }
 
 .img_bg4 {
-  width: 26.67px;
+  width: 35px;
   height: 30px;
 }
 
 .img_bg5 {
-  width: 26.67px;
+  width: 35px;
   height: 30px;
 }
 
 .img_bg6 {
-  width: 26.67px;
+  width: 35px;
   height: 30px;
 }
 
