@@ -1528,6 +1528,11 @@
     height: 48px !important;
   }
 }
+@media (max-width: 619.98px) {
+  #toTop {
+    bottom: 100px !important;
+  }
+}
 html,
 body,
 div,
@@ -2008,6 +2013,32 @@ h1 span {
   line-height: 30px;
   font-family: "SF Pro Display Regular";
   color: rgba(255, 255, 255, 0.4);
+}
+
+.header_info_col2 {
+  -webkit-transition: all 0.5s ease !important;
+  transition: all 0.5s ease !important;
+}
+.header_info_col2:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+#toTop {
+  width: 68px;
+  border: 2px solid #8e95a3;
+  background: #1e2b48;
+  text-align: center;
+  padding: 5px 0 14px 0px;
+  position: fixed;
+  bottom: 37px;
+  border-radius: 50%;
+  right: 2%;
+  cursor: pointer;
+  display: none;
+  color: #fff;
+  font-family: verdana;
+  font-size: 37px;
 }
 
 .wrap {

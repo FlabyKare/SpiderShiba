@@ -127,3 +127,22 @@ $(".mobile_tokenomiks_items").slick({
    autoplay: true,
    autoplayspeed: 2000,
 });
+
+// Стрелка вверх
+
+var $window = $(window);
+var wWidth  = $window.width();
+$(function () {
+   $(window).scroll(function () {
+    // if(wWidth >= )
+      if ($(this).scrollTop() > 4500) {
+         $("#toTop").fadeIn();
+      } else {
+         $("#toTop").fadeOut();
+      }
+   });
+
+   $("#toTop").click(function () {
+      $("body,html").animate({ scrollTop: 0 }, 800);
+   });
+});

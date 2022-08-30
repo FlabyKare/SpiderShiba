@@ -438,8 +438,28 @@ h1 {
    color: rgba(255, 255, 255, 0.4);
 }
 .header_info_col2 {
+   transition: all 0.5s ease !important;
+   &:hover {
+      transform: scale(1.1);
+   }
 }
 
+#toTop {
+   width: 68px;
+   border: 2px solid #8e95a3;
+   background: #1e2b48;
+   text-align: center;
+   padding: 5px 0 14px 0px;
+   position: fixed;
+   bottom: 37px;
+   border-radius: 50%;
+   right: 2%;
+   cursor: pointer;
+   display: none;
+   color: #fff;
+   font-family: verdana;
+   font-size: 37px;
+}
 // ==================================
 // ==================================
 

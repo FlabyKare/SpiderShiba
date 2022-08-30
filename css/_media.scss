@@ -1598,8 +1598,12 @@ body {
    }
 }
 
-// Intro
-
+// Стрелка вверх
+@media (max-width: 619.98px){
+    #toTop{
+        bottom: 100px !important;
+    }
+}
 @media (min-width: 320px) and (max-width: 575.98px) {
 }
 
