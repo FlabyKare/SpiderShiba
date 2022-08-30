@@ -372,6 +372,7 @@ body {
          max-width: 360px !important;
          font-size: 25px !important;
          line-height: 30px !important;
+         padding: 0 17px;
       }
       .header_info_col_buttons {
          max-width: 300px !important;
@@ -383,20 +384,83 @@ body {
    .how_it_works {
       background: #101932 !important;
    }
-   .img_blue {
-      display: none !important;
+   .img_absolute {
+      max-width: 70px !important;
    }
-   .img_gold {
-      display: none !important;
+
+   .cat_img_earth {
+      display: none;
    }
-   .img_red {
-      display: none !important;
+   .how_it_works_info {
+      .header_info_col_buttons {
+         max-width: 300px !important;
+      }
+      .reb_btn {
+         padding: 10px 45px 15px !important;
+      }
    }
    .cat_img_earth {
       display: none;
    }
 }
-
+@media (max-width: 356.98px) {
+   .img_blue {
+      //   display: none !important;
+      right: 10% !important;
+      top: 315px !important;
+      border: 17px solid rgba(0, 150, 242, 0) !important;
+      &:hover {
+         border: 17px solid rgba(0, 150, 242, 0.4) !important;
+      }
+   }
+   .img_gold {
+      //   display: none !important;
+      right: 22% !important;
+      bottom: 70px !important;
+      border: 17px solid rgba(255, 148, 41, 0) !important;
+      &:hover {
+         border: 17px solid rgba(255, 148, 41, 0.4) !important;
+      }
+   }
+   .img_red {
+      //   display: none !important;
+      left: 10% !important;
+      top: 345px !important;
+      border: 17px solid rgba(225, 29, 46, 0) !important;
+      &:hover {
+         border: 17px solid rgba(225, 29, 46, 0.4) !important;
+      }
+   }
+}
+@media (min-width: 357px) and (max-width: 575.98px) {
+   .img_blue {
+      //   display: none !important;
+      right: 10% !important;
+      top: 270px !important;
+      border: 17px solid rgba(0, 150, 242, 0) !important;
+      &:hover {
+         border: 17px solid rgba(0, 150, 242, 0.4) !important;
+      }
+   }
+   .img_gold {
+      //   display: none !important;
+      right: 22% !important;
+      bottom: 70px !important;
+      border: 17px solid rgba(255, 148, 41, 0) !important;
+      &:hover {
+         border: 17px solid rgba(255, 148, 41, 0.4) !important;
+      }
+   }
+   .img_red {
+      //   display: none !important;
+      left: 16% !important;
+      top: 298px !important;
+      border: 17px solid rgba(225, 29, 46, 0) !important;
+      &:hover {
+         border: 17px solid rgba(225, 29, 46, 0.4) !important;
+      }
+   }
+}
 @media (min-width: 576px) and (max-width: 767.98px) {
    .partners_icons {
       margin-bottom: 35px !important;
@@ -422,17 +486,46 @@ body {
    .how_it_works {
       background: #101932 !important;
    }
+   .img_absolute {
+      max-width: 70px !important;
+   }
    .img_blue {
-      display: none !important;
+      //   display: none !important;
+      right: 20% !important;
+      top: 316px !important;
+      border: 17px solid rgba(0, 150, 242, 0) !important;
+      &:hover {
+         border: 17px solid rgba(0, 150, 242, 0.4) !important;
+      }
    }
    .img_gold {
-      display: none !important;
+      //   display: none !important;
+      right: 31% !important;
+      bottom: 115px !important;
+      border: 17px solid rgba(255, 148, 41, 0) !important;
+      &:hover {
+         border: 17px solid rgba(255, 148, 41, 0.4) !important;
+      }
    }
    .img_red {
-      display: none !important;
+      //   display: none !important;
+      left: 27% !important;
+      top: 360px !important;
+      border: 17px solid rgba(225, 29, 46, 0) !important;
+      &:hover {
+         border: 17px solid rgba(225, 29, 46, 0.4) !important;
+      }
    }
    .cat_img_earth {
       display: none;
+   }
+   .how_it_works_info {
+      .header_info_col_buttons {
+         max-width: 300px !important;
+      }
+      .reb_btn {
+         padding: 10px 45px 15px !important;
+      }
    }
 }
 
@@ -1599,10 +1692,10 @@ body {
 }
 
 // Стрелка вверх
-@media (max-width: 619.98px){
-    #toTop{
-        bottom: 100px !important;
-    }
+@media (max-width: 619.98px) {
+   #toTop {
+      bottom: 100px !important;
+   }
 }
 @media (min-width: 320px) and (max-width: 575.98px) {
 }
