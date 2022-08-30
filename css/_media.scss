@@ -896,6 +896,10 @@ body {
    .trend {
       padding: 120px 15px 100px !important;
       text-align: -webkit-center;
+      .reb_btn{
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+      }
    }
    .section_subtitle {
       padding: 0 16px !important;
@@ -1025,6 +1029,11 @@ body {
 }
 
 @media (min-width: 1400px) {
+    .trend{
+        .header_info_col_buttons{
+            min-width: 404px !important;
+        }
+    }
 }
 
 // Preloader
