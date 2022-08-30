@@ -418,6 +418,7 @@
   }
   .how_it_works_info .reb_btn {
     padding: 10px 45px 15px !important;
+    white-space: nowrap !important;
   }
   .cat_img_earth {
     display: none;
@@ -500,6 +501,9 @@
   .how_it_works_info .header_info_col_buttons {
     max-width: 100% !important;
     margin-top: 350px !important;
+  }
+  .how_it_works_info .header_info_col_buttons .reb_btn {
+    white-space: nowrap !important;
   }
   .how_it_works {
     background: #101932 !important;

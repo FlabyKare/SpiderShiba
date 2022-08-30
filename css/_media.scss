@@ -127,7 +127,6 @@ body {
 //      }
 // }
 @media (min-width: 320px) and (max-width: 575.98px) {
-
    nav {
       padding: 0 15px !important;
       align-items: center;
@@ -398,6 +397,7 @@ body {
       }
       .reb_btn {
          padding: 10px 45px 15px !important;
+         white-space: nowrap !important;
       }
    }
    .cat_img_earth {
@@ -481,8 +481,11 @@ body {
          line-height: 30px !important;
       }
       .header_info_col_buttons {
-        max-width: 100% !important;
+         max-width: 100% !important;
          margin-top: 350px !important;
+         .reb_btn {
+            white-space: nowrap !important;
+         }
       }
    }
    .how_it_works {
@@ -898,9 +901,9 @@ body {
    .trend {
       padding: 120px 15px 100px !important;
       text-align: -webkit-center;
-      .reb_btn{
-        padding-right: 0 !important;
-        padding-left: 0 !important;
+      .reb_btn {
+         padding-right: 0 !important;
+         padding-left: 0 !important;
       }
    }
    .section_subtitle {
@@ -1031,11 +1034,11 @@ body {
 }
 
 @media (min-width: 1400px) {
-    .trend{
-        .header_info_col_buttons{
-            min-width: 404px !important;
-        }
-    }
+   .trend {
+      .header_info_col_buttons {
+         min-width: 404px !important;
+      }
+   }
 }
 
 // Preloader
