@@ -423,6 +423,13 @@
   .cat_img_earth {
     display: none;
   }
+  .trend .header_info_col_buttons {
+    max-width: 100% !important;
+    padding: 0 !important;
+  }
+  .trend .reb_btn {
+    white-space: nowrap !important;
+  }
 }
 @media (max-width: 356.98px) {
   .img_blue {
@@ -477,6 +484,13 @@
   }
 }
 @media (min-width: 576px) and (max-width: 767.98px) {
+  .trend .header_info_col_buttons {
+    max-width: 100% !important;
+    padding: 0 !important;
+  }
+  .trend .reb_btn {
+    white-space: nowrap !important;
+  }
   .partners_icons {
     margin-bottom: 35px !important;
     -ms-flex-wrap: wrap;
@@ -2137,7 +2151,7 @@ h1 span {
   border: 2px solid #8e95a3;
   background: #1e2b48;
   text-align: center;
-  padding: 5px 0 14px 0px;
+  padding: 5px 0;
   position: fixed;
   bottom: 37px;
   border-radius: 50%;
@@ -2145,11 +2159,13 @@ h1 span {
   cursor: pointer;
   display: none;
   color: #fff;
-  font-family: verdana;
+  font-family: "SF Pro Display Semibold";
   font-size: 37px;
   z-index: 222;
-  -webkit-transition: 0.35s;
-  transition: 0.35s;
+  -webkit-transition: -webkit-box-shadow 0.3s ease-in-out 0s;
+  transition: -webkit-box-shadow 0.3s ease-in-out 0s;
+  transition: box-shadow 0.3s ease-in-out 0s;
+  transition: box-shadow 0.3s ease-in-out 0s, -webkit-box-shadow 0.3s ease-in-out 0s;
 }
 
 .wrap {

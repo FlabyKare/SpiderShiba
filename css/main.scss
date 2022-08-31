@@ -449,7 +449,7 @@ h1 {
    border: 2px solid #8e95a3;
    background: #1e2b48;
    text-align: center;
-   padding: 5px 0 14px 0px;
+   padding: 5px 0;
    position: fixed;
    bottom: 37px;
    border-radius: 50%;
@@ -457,10 +457,10 @@ h1 {
    cursor: pointer;
    display: none;
    color: #fff;
-   font-family: verdana;
+   font-family: $font_600;
    font-size: 37px;
    z-index: 222;
-   transition: 0.35s;
+   transition: box-shadow 0.3s ease-in-out 0s;
 }
 // ==================================
 // ==================================
